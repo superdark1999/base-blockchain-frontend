@@ -5,7 +5,6 @@ import { useMemo } from 'react'
 import ENS_PUBLIC_RESOLVER_ABI from '../constants/abis/ens-public-resolver.json'
 import ENS_ABI from '../constants/abis/ens-registrar.json'
 import ERC20_ABI from '../constants/abis/erc20.json'
-import { MULTICALL_ABI, MULTICALL_NETWORKS } from '../constants/multicall'
 import { getContract } from '../utils'
 import { getErc721Contract, getBep20Contract } from '../utils/contractHelpers'
 

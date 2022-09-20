@@ -1,6 +1,5 @@
 import { createWeb3ReactRoot, Web3ReactProvider } from '@web3-react/core'
 import { RefreshContextProvider } from 'contexts/RefreshContext'
-import { ThemeContextProvider } from 'contexts/ThemeContext'
 import React from 'react'
 import { Provider } from 'react-redux'
 import store from 'state'
@@ -16,11 +15,9 @@ const Providers: React.FC<Props> = ({ children }) => {
     <Web3ReactProvider getLibrary={getLibrary}>
       <Web3ProviderNetwork getLibrary={getLibrary}>
         <Provider store={store}>
-          <ThemeContextProvider>
-            <RefreshContextProvider>
-              <ModalProvider>{children}</ModalProvider>
-            </RefreshContextProvider>
-          </ThemeContextProvider>
+          <RefreshContextProvider>
+            <ModalProvider>{children}</ModalProvider>
+          </RefreshContextProvider>
         </Provider>
       </Web3ProviderNetwork>
     </Web3ReactProvider>

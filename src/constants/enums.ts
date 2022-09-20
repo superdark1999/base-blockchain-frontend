@@ -28,24 +28,3 @@ export enum ChainId {
   MOONRIVER = 1285,
   FUSE = 122,
 }
-
-export enum SHOE_TYPE {
-  WALKER = 'WALKER',
-  RUNNER = 'RUNNER',
-  TRAINER = 'TRAINER',
-}
-
-export enum SHOE_RARITIES {
-  common = 'common',
-  uncommon = 'uncommon',
-  rare = 'rare',
-  epic = 'epic',
-  legend = 'legend',
-}
-
-export enum MINT_SLOT_STATUS {
-  AVAILABLE = 'AVAILABLE',
-  UNAVAILABLE = 'UNAVAILABLE',
-  COUNTDOWN = 'COUNTDOWN',
-  MINTED = 'MINTED',
-}
